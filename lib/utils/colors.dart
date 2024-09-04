@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -11,14 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Instagram Clone",
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Color(0xFF000000)
-            
-      ),
+      theme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: const Color(0xFF000000)),
       darkTheme: ThemeData(primarySwatch: Colors.blue),
       debugShowCheckedModeBanner: false,
       color: Colors.cyanAccent,
-      home: HomeActivity(),
+      home: const HomeActivity(),
     );
   }
 }
@@ -30,8 +29,11 @@ class HomeActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Inventory App"),
+        title: const Text("Inventory App"),
       ),
     );
   }
 }
+
+
+/// my name is ahammod sarif tanna;
